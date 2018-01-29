@@ -137,87 +137,125 @@
 
 <div class="sitebar">
 	<ul>
-		<li id="li1" value="PTS" class="button_x" style="margin-left: 40px"><a href="#">Заем под залог спецтехники</a></li>
-		<li id="li2" value="ZA" class="button_x"><a href="#">Заем под залог автомобиля</a></li>
-		<li id="li3" class="button_x"><a href="auto.html">Продажа автомобилей</a></li>
-		<li id="li4" value="PTS" class="button_x"><a href="#">Заем под залог ПТС</a></li>
-		<li id="li5" class="button_x"><a href="#">Автокредит</a></li>
+		<li id="li1" value="PTS" class="button_x"><a href="/">Заем под залог спецтехники</a></li>
+		<li id="li2" value="ZA" class="button_x"><a href="/">Заем под залог автомобиля</a></li>
+		<li id="li3" class="button_x" style="margin-left: 40px"><a href="#">Продажа автомобилей</a></li>
+		<li id="li4" value="PTS" class="button_x"><a href="/">Заем под залог ПТС</a></li>
+		<li id="li5" class="button_x"><a href="/">Автокредит</a></li>
 	</ul>
 </div>
 
 <div class="head_form">
 	
 <div id="calculator">
-<h3>Заем под залог спецтехники</h3>
-
-<div class="slider_wrap">
-	<p>Сумма займа</p>
-	<div id="PTS">
-		<input id="sliderPTS" class="slider">
-	</div>
-	<div id="ZA" class="hidden">
-		<input id="sliderZA" class="slider">
-	</div>
+<h3>Продажа автомобилей</h3>
+<div class="auto">
+<div class="buy_auto">
+<span>Марка</span>
+<div class="sel"><select name="mark" id="mark">
+	<option value="sss">Opel</option>
+	<option value="sss">Renaut</option>
+	<option value="sss">Suzuki</option>
+	<option value="sss">Kia</option>
+	<option value="sss">BMW</option>
+</select></div>
+</div>
+<div class="buy_auto" style="margin-left: 26px">
+<span>Модель</span>
+<div class="sel"><select name="mark" id="mark">
+	<option value="sss">Astra</option>
+	<option value="sss">Scenic</option>
+	<option value="sss">Liana</option>
+	<option value="sss">Sportage</option>
+	<option value="sss">Turbo</option>
+</select></div>
+</div>
+<div>
+	<p style="text-align: center">Цена</p>
+	<input id="sliderBuyAP" class="slider">
+</div>
+<div>
+	<p style="text-align: center">Год выпуска</p>
+	<input id="sliderBuyAG" class="slider">
+</div>
+<div class="buy_auto">
+<span>Кузов</span>
+<div class="sel"><select name="mark" id="mark">
+	<option value="sss">Внедорожник</option>
+	<option value="sss">Купе</option>
+	<option value="sss">Микроавтобус</option>
+	<option value="sss">Минивен</option>
+	<option value="sss">Пикап</option>
+</select></div>
+</div>
+<div class="buy_auto" style="margin-left: 26px">
+<span>Двигатель</span>
+<div class="sel"><select name="mark" id="mark">
+	<option value="sss">Все</option>
+	<option value="sss">Бензиновый</option>
+	<option value="sss">Дизельный</option>
+</select></div>
+</div>
 </div>
 
-<div class="zaim_wrap">
-<p>Выберите срок:</p>
-<div class="radio_b hidden">
-	<input type="radio" name="radd" value="1" id="rad1" checked="checked">
-	<label for="rad1"  class="button_x">1 год</label>
-	<input type="radio" name="radd" value="2" id="rad2">
-	<label for="rad2" class="">2 года</label>
-</div>
-<div id="srokPTS"><input id="sliderSrokPTS" class="slider"></div>
-<div id="srokZA" class="hidden"><input id="sliderSrokZA" class="slider"></div>
-</div>
+<div class="form_button"><a class="button_p" href="#">Найти</a></div>
 
-<div class="result"><span>0</span> РУБ</p></div>
-
-<div class="form_button"><a class="button_p" href="#">Оставить заявку</a></div>
 </div>
 </div>
 </header>
-<section class="zaim_sec">
-	<h3>3 простых шага <span class="button_y button_y1">для получения займа</span></h3>
-	<div class="zaim_items">
-		<div class="z_item">
-			<div class="img" style="background-image: url(img/boss.svg)"></div>
-			<p><a href="#">Отправьте заявку</a></p>
-		</div>
-		<i class="arrow fa fa-chevron-right" aria-hidden="true"></i>
-		<div class="z_item">
-			<div class="img" style="background-image: url(img/check-mark.svg)"></div>
-			<p>Вам перезвонит наш менеджер</p>
-		</div>
-		<i class="arrow fa fa-chevron-right" aria-hidden="true"></i>
-		<div class="z_item">
-			<div class="img" style="background-image: url(img/money.svg)"></div>
-			<p>Получите займ на любые цели</p>
-		</div>
+<section class="auto_sec">
+	<h3>авто <span class="button_y button_y1">в наличии</span></h3>
+	<div class="auto_i">
+		<a href="auto_item.html" class="auto_item">
+			<div class="auto_img" style="background-image: url(img/auto/auto1.jpg)">
+				<ul>
+					<li>1.6 л. (115 л.c.), бензиновый</li>
+					<li>передний, механика</li>
+					<li>144 000 км.</li>
+					<li>Универсал, 5 дв.</li>
+				</ul>
+				<span class="button_y button_y1">249 000 руб.</span>
+			</div>
+			<h3>Opel Astra '2008 г.</h3>
+		</a>
+		<a href="#" class="auto_item">
+			<div class="auto_img" style="background-image: url(img/auto/auto2.jpg)">
+				<ul>
+					<li>1.5 л. (86 л.c.), дизельный</li>
+					<li>передний, механика</li>
+					<li>164 000 км.</li>
+					<li>Компактвэн, 5 дв.</li>
+				</ul>
+				<span class="button_y button_y1">235 000 руб.</span>
+			</div>
+			<h3>Renault Scenic '2006 г.</h3>
+		</a>
+		<a href="#" class="auto_item">
+			<div class="auto_img" style="background-image: url(img/auto/auto3.jpg)">
+				<ul>
+					<li>1.6 л. (103 л.c.), бензиновый</li>
+					<li>постоянный полный, автомат</li>
+					<li>141 000 км.</li>
+					<li>Седан, 4 дв.</li>
+				</ul>
+				<span class="button_y button_y1">250 000 руб.</span>
+			</div>
+			<h3>Suzuki Liana '2003 г.</h3>
+		</a>
+		<a href="#" class="auto_item">
+			<div class="auto_img" style="background-image: url(img/auto/auto4.jpg)">
+				<ul>
+					<li>2 л. (112 л.c.), дизельный</li>
+					<li>постоянный полный, автомат</li>
+					<li>156 000 км.</li>
+					<li>Внедорожник, 5 дв.</li>
+				</ul>
+				<span class="button_y button_y1">435 000 руб.</span>
+			</div>
+			<h3>Kia Sportage '2006 г.</h3>
+		</a>
 	</div>
-</section>
-<section class="map">
-	<h3>Найти нас</h3>
-	<div class="map_locations">
-		<p value="https://yandex.ru/map-widget/v1/?um=constructor%3A8a4a876a53de9062ed7129208a6632cb59b7e0d66770f88af8378cbe25e621ce&amp;source=constructor"><i class="fa fa-map-marker" aria-hidden="true"></i>
-		Санкт-Петербург и Ленинградская обл.</p>
-		<p value="https://yandex.ru/map-widget/v1/?um=constructor%3A63d6244ad04feb9e6c831eae10b3e4adf34a698b79d17f59e95c679be6f0c441&amp;source=constructor"><i class="fa fa-map-marker" aria-hidden="true"></i>
-		Новгородская Обл.</p>
-		<p value=""><i class="fa fa-map-marker" aria-hidden="true"></i>
-		Псковская Обл.</p>
-		<p value=""><i class="fa fa-map-marker" aria-hidden="true"></i>
-		Архангельская Обл.</p>
-		<p value=""><i class="fa fa-map-marker" aria-hidden="true"></i>
-		Респ. Карелия</p>
-		<p value=""><i class="fa fa-map-marker" aria-hidden="true"></i>
-		Мурманская Обл.</p>
-		<p value=""><i class="fa fa-map-marker" aria-hidden="true"></i>
-		Москва</p>
-	</div>
-	<div id="map">
-		<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A8a4a876a53de9062ed7129208a6632cb59b7e0d66770f88af8378cbe25e621ce&amp;source=constructor" width="70%" height="560" frameborder="0"></iframe>
-	</div>
+	<a class="button_p" href="#">Все объявления</a>
 </section>
 
 	<link rel="stylesheet" href="css/main.min.css">
